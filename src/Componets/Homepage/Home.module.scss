@@ -1,0 +1,93 @@
+.home {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      h1 {
+        width: 572px;
+        color: var(--dark-color);
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: capitalize;
+        // -webkit-text-stroke-width: thin
+      }
+      h3 {
+        color: var(--dark-color);
+
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      p {
+        color: var(--gray-color);
+        width: 569px;
+        text-align: justify;
+        font-size: 12px;
+        line-height: normal;
+      }
+     
+      .inputFlex {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .inputContainer{
+            display: flex;
+            height: 42px;
+            width: 416px;
+            gap: 10px;
+            padding: 1px 8px;
+            border-radius: 7px;
+            align-items: center;
+            border: 1px solid #eee;;
+            background: #F8F6F4;
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+                height: 100%;
+                width: 100%;
+                &:focus{
+                  background: transparent;
+                  height: 100%;
+                  width: 100%;
+                }
+            }
+            
+        }
+        .homeButton{
+            border-radius: 7px;
+            background: var(--green-color);
+            width: 143px;
+            height: 45px;
+            border: none;
+            color: #fff;
+            
+        }
+      }
+    }
+    .right {
+    }
+  }
+  .superText{
+    padding-top: 45px;
+    text-transform: capitalize;
+    text-align: center;
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+    p{
+        font-size: 12px;
+        width: 64%;
+        margin-inline: auto;
+        font-weight: 400;
+    }
+  }
+
+}

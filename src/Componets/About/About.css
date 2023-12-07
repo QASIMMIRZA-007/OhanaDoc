@@ -1,0 +1,130 @@
+.about-page{
+    margin-top: 20px;
+    }
+    
+    .flexContainer{
+        display: flex;
+        
+    }
+    .carddata{
+      margin-top: 20px;
+    }
+    .parent{
+      display: flex;
+      justify-content: center;
+      height: 500px;
+    }
+    .itemA{
+      display: flex;
+      align-items: end;
+    }
+    .first-img{
+      position: relative;
+      left: 165px;
+      bottom: 69px;
+      z-index: 1
+    
+    }
+    .about-icons{
+      position: relative;
+      bottom: 185px;
+      left: 257px;
+      gap: 15px;
+      display: flex;
+      cursor: pointer;
+    
+    }
+    .doctor-name{
+      position: relative;
+      right: 50px;
+      top: 40px;
+    }
+    .doctor-name-2{
+      position: relative;
+      right: 235px;
+      top: 165px
+    }
+    h6{
+      color: var(--dark-color);
+    font-size: 14px;
+    font-weight: 600;
+    }
+    .itemB{
+      display: flex;
+      align-items: center;
+    }
+    .third-img{
+      position: relative;
+      right: 80px;
+      top: 21px;
+    }
+    .about-icons2{
+      position: relative;
+      top: 181px;
+      right: 245px;
+      display: flex;
+      gap: 15px;
+      cursor: pointer;
+    }
+    .main-container{
+      display: flex;
+      margin-top: 45px;
+    }
+    
+    .about-page-heading{
+      color: var(--dark-color);
+    font-size: 30px;
+    font-weight: 700;
+    height:41px ;
+    margin-left: 12px;
+    }
+    .about-page-para{
+      color:  #828282;
+    text-align: justify;
+    font-size: 12px;
+    font-weight: 400;
+    width: 480px;
+    /* height: 120px; */
+    margin-left: 12px;
+    }
+    .flexContainer{
+        width: 480px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .box{
+      width: 203px;
+    height: 129px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3.14815px 0px rgba(0, 0, 0, 0.01), 0px 0px 6.51852px 0px rgba(0, 0, 0, 0.02), 0px 0px 13px 0px rgba(0, 0, 0, 0.03), 0px 0px 25.48148px 0px rgba(0, 0, 0, 0.03), 0px 0px 46.85185px 0px rgba(0, 0, 0, 0.04), 0px 0px 80px 0px rgba(218, 218, 218, 0.05);
+    cursor: pointer;
+    
+    }
+    .boxdata{
+      display: flex;
+      flex-direction: column;
+      /* gap: 10px; */
+     padding-top: 31px;
+    }
+    .digits{
+      color: var(--dark-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    /* margin-top: 6px; */
+    }
+    .plus{
+      font-size: 20px;
+    }
+    .tense{
+      color: #828282;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    }

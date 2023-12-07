@@ -1,0 +1,39 @@
+.navbar {
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 0 40px;
+  }
+  .left {
+  }
+  .right {
+    nav {
+      ul {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        li {
+          list-style: none;
+          text-transform: capitalize;
+          color: var(--dark-color);
+font-size: 14px;
+font-weight: 400;
+cursor: pointer;
+          
+        }
+        .navButton {
+          // padding: 8px 10px;
+          background: var(--green-color);
+          border: none;
+          border-radius: 5px;
+          width: 100px;
+          height: 42px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

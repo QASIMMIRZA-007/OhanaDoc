@@ -1,0 +1,76 @@
+.faqContainer {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    // gap: 20px;
+    margin-top: 60px;
+    .left {
+      width: 394px;
+      h1 {
+        color: var(--dark-color);
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      p {
+        color: var(--gray-color);
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .buttons {
+        width: 494px;
+        display: flex;
+        flex-wrap: wrap;
+        .dark {
+          border-radius: 7px;
+          background: var(--dark-color);
+          padding: 14px 18px;
+          color: #ffff;
+          border: none;
+          margin: 3px;
+          font-size: 12px;
+          font-weight: 700;
+        }
+        .btn {
+          border-radius: 7px;
+          border: 1px solid #d4cfcc;
+          background: #f8f6f4;
+          padding: 14px 18px;
+          margin: 3px;
+          color: #958070;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .right {
+      width: 500px;
+      .textLine {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          color: var(--dark-color);
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .ansLine {
+        p {
+          color: var(--gray-color);
+          text-align: justify;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+      hr {
+        margin: 15px 0;
+        height: 3px;
+        border: none;
+        color:  #E0E0E0;
+       background:  #E0E0E0;
+      }
+    }
+  }
+}
