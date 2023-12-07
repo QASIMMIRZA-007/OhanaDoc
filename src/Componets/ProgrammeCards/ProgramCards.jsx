@@ -1,6 +1,6 @@
 import { useState } from "react";
 import style from "./ProgCards.module.scss";
-import FirstCardsvg from "../../assets/ProjectSvgs/ProgrammeCardssvgs/firstCardsvg";
+import FirstCardsvg from "../../assets/ProjectSvgs/ProgrammeCardssvgs/FirstCardsvg";
 
 function ProgramCards() {
   const [showAllCards, setShowAllCards] = useState(false);
