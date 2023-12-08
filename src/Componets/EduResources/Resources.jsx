@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Resources.module.scss'
-import ArrowgreenSvg from '../../assets/ProjectSvgs/Resources/arrowgreenSvg'
+
+import GreenArrowSvg from '../../assets/ProjectSvgs/Resources/GreenArrowSvg'
 import CircleArrow from '../../assets/ProjectSvgs/CircleArrow'
 import ArrowCircle2 from '../../assets/ProjectSvgs/ArrowCircle2'
 function Resources() {
@@ -19,7 +20,7 @@ function Resources() {
                     </div>
                     <div className={style.dflex}>
                         <div className='green'>Learn more</div>
-                        <div><ArrowgreenSvg /></div>
+                        <div><GreenArrowSvg /></div>
                     </div>
 
                 </div>
@@ -33,7 +34,7 @@ function Resources() {
                     </div>
                     <div className={style.dflex}>
                         <div className='green'>Learn more</div>
-                        <div><ArrowgreenSvg /></div>
+                        <div><GreenArrowSvg /></div>
                     </div>
 
                 </div>
@@ -47,7 +48,7 @@ function Resources() {
                     </div>
                     <div className={style.dflex}>
                         <div className='green'>Learn more</div>
-                        <div><ArrowgreenSvg /></div>
+                        <div><GreenArrowSvg /></div>
                     </div>
 
                 </div>
