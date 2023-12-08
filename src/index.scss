@@ -23,7 +23,7 @@ html {
 }
 .textArea {
   height: 100px;
-  background: #F8F6F4;
+  background: #f8f6f4;
 
   textarea {
     width: 100%;
@@ -44,32 +44,31 @@ button {
 .blue {
   color: var(--skyblue-color);
 }
-.green{
+.green {
   color: var(--green-color);
 }
-.disabled{
- color: #4f4f4f;
- fill:"#4f4f4f";
+.disabled {
+  color: #4f4f4f;
+  fill: "#4f4f4f";
 }
-.bgQuote{
+.bgQuote {
   position: relative;
   bottom: 70px;
   left: 430px;
 }
-.proicon{
- font-size: 50px;
-// cursor: pointer;
-
+.proicon {
+  font-size: 50px;
+  // cursor: pointer;
 }
-.arrowgreensvg{
- margin-top: 8px;
- cursor: pointer;
+.arrowgreensvg {
+  margin-top: 8px;
+  cursor: pointer;
 }
-.icon{
+.icon {
   font-size: 18px;
   cursor: pointer;
 }
-.cursor{
+.cursor {
   cursor: pointer;
 }
 .flex {
@@ -77,48 +76,12 @@ button {
   gap: 3px;
 }
 ::-webkit-scrollbar {
- display: none;
-//   background: var(--green-color);
+  display: none;
+  //   background: var(--green-color);
 }
 
 ::-webkit-scrollbar {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-
-/* Navbar.module.scss */
-
-/* Navbar.module.scss */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdownItem {
-  padding: 10px;
-  cursor: pointer;
-  border-bottom: 1px solid #eee;
-}
-
-/* Optionally, you can style the last item without a bottom border */
-.dropdownItem:last-child {
-  border-bottom: none;
-}
-
-/* Add a class to show the dropdown content */
-.dropdownContent.show {
-  display: block;
-}

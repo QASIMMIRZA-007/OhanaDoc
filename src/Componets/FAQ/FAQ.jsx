@@ -67,8 +67,7 @@ function FAQ() {
                       className="icon"
                       onClick={() => toggleAnswerVisibility(item.id)}
                     >
-                        <span className="orange">{getIcon(item.id)}</span>
-                      
+                      <span className="orange">{getIcon(item.id)}</span>
                     </b>
                   </div>
                   {openQuestion === item.id && (
