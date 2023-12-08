@@ -1,8 +1,14 @@
-import React from "react";
+import {useState} from "react";
 import style from "./Navbar.module.scss";
 import LogoSvg from "../../assets/ProjectSvgs/LogoSvg";
 import Downarrow from "../../assets/ProjectSvgs/Downarrow";
 function Navbar() {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+    
+  };
   return (
     <>
       <div className={style.navbar}>
@@ -15,15 +21,16 @@ function Navbar() {
           <div className={style.right}>
             <nav>
               <ul>
-                <li className="flex">
+                <li className="flex" onClick={toggleDropdown}>
                   Consultation
                   <Downarrow />
+            
                 </li>
                 <li>Medical weight loss</li>
                 <li>aging</li>
                 <li>Sexual health</li>
                 <li>lab testing</li>
-                <li>|</li>
+                <li className={style.navLine}>|</li>
                 <li>Contact us</li>
                 <button className={style.navButton}>Login</button>
               </ul>

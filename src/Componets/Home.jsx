@@ -6,6 +6,9 @@ import WorkingCards from './WorkingCards/Cards'
 import Reviews from './Reviews/Reviews'
 import About from './About/About'
 import FAQ from './FAQ/FAQ'
+import SubmittionForm from './SubmittionForm/Form'
+import Resources from './EduResources/Resources'
+import Footer from './Footer/Footer'
 
 function Home() {
   return (
@@ -18,9 +21,14 @@ function Home() {
         <About/>
         <Reviews/>
         <FAQ/>
+        <SubmittionForm/>
+        <Resources/>
+        <Footer/>
         </div> 
     </>
   )
 }
 
 export default Home
+
+

@@ -19,10 +19,12 @@
           list-style: none;
           text-transform: capitalize;
           color: var(--dark-color);
-font-size: 14px;
-font-weight: 400;
-cursor: pointer;
-          
+          font-size: 14px;
+          font-weight: 400;
+          cursor: pointer;
+          .navLine {
+            background: #f1e9e4;
+          }
         }
         .navButton {
           // padding: 8px 10px;

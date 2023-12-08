@@ -21,6 +21,20 @@ html {
   --line-color: #f1e9e4;
   --brown-color: #958070;
 }
+.textArea {
+  height: 100px;
+  background: #F8F6F4;
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    border: none !important;
+
+    &:focus {
+      border: none !important;
+    }
+  }
+}
 button {
   cursor: pointer;
 }
@@ -45,7 +59,11 @@ button {
 .proicon{
  font-size: 50px;
 // cursor: pointer;
-color: rebeccapurple;
+
+}
+.arrowgreensvg{
+ margin-top: 8px;
+ cursor: pointer;
 }
 .icon{
   font-size: 18px;
@@ -66,4 +84,41 @@ color: rebeccapurple;
 ::-webkit-scrollbar {
   -ms-overflow-style: none; 
   scrollbar-width: none; 
+}
+
+
+/* Navbar.module.scss */
+
+/* Navbar.module.scss */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+/* Optionally, you can style the last item without a bottom border */
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+/* Add a class to show the dropdown content */
+.dropdownContent.show {
+  display: block;
 }

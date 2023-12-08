@@ -21,18 +21,18 @@ function Reviews() {
     },
     {
       id: 1,
-      img: "./Images/Rectangle 10.png",
+      img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww",
       title: "Amazing work",
       para: "Lorem ipsum dolor sit amet consectetur. Luctus orci est est porttitor morbi a dui. Sagittis tellus enim lectus auctorcondimentum nunc nec pharetra cum. Sed sem sit ipsum nibh enimornare. Nunc cursus enim cras vivamus consequat facilisi bibendum. In id in nulla euismod.",
-      name: "Melinda Maine",
+      name: "Marindra cohen",
     },
-    // {
-    //   id: 2,
-    //   img: "./Images/Crush material.jpg",
-    //   title: "Mashallah",
-    //   para: "Lorem ipsum dolor sit amet consectetur. Luctus orci est est porttitor morbi a dui. Sagittis tellus enim lectus auctorcondimentum nunc nec pharetra cum. Sed sem sit ipsum nibh enimornare. Nunc cursus enim cras vivamus consequat facilisi bibendum. In id in nulla euismod.",
-    //   name: "Crush material",
-    // },
+    {
+      id: 2,
+      img: "https://plus.unsplash.com/premium_photo-1678453146861-d0614ff93be4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmV2aWV3fGVufDB8fDB8fHww",
+      title: "Excellent Performance",
+      para: "Lorem ipsum dolor sit amet consectetur. Luctus orci est est porttitor morbi a dui. Sagittis tellus enim lectus auctorcondimentum nunc nec pharetra cum. Sed sem sit ipsum nibh enimornare. Nunc cursus enim cras vivamus consequat facilisi bibendum. In id in nulla euismod.",
+      name: "Alex doe",
+    },
   ];
 
   const showNextReview = () => {
