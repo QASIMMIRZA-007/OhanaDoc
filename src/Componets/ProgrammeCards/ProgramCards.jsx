@@ -1,6 +1,10 @@
 import { useState } from "react";
 import style from "./ProgCards.module.scss";
 import FirstCardsvg from "../../assets/ProjectSvgs/ProgrammeCardssvgs/FirstCardsvg";
+import SecondCardSvg from '../../assets/ProjectSvgs/ProgrammeCardssvgs/SecondCardSvg'
+import Thirdcardsvg from '../../assets/ProjectSvgs/ProgrammeCardssvgs/Thirdcardsvg'
+
+
 
 function ProgramCards() {
   const [showAllCards, setShowAllCards] = useState(false);
@@ -8,7 +12,7 @@ function ProgramCards() {
   const data = [
     {
       id: 0,
-      svg: <FirstCardsvg />,
+      svg: <SecondCardSvg />,
       title: "Hair loss treatment",
       price: "$59.99",
       p: "Lorem ipsum dolwor sit amet consectetur. Luctus orci est est porttitor morbi a dui",
@@ -22,7 +26,7 @@ function ProgramCards() {
     },
     {
       id: 2,
-      svg: <FirstCardsvg />,
+      svg: <Thirdcardsvg />,
       title: "Hair loss treatment",
       price: "$59.99",
       p: "Lorem ipsum dolwor sit amet consectetur. Luctus orci est est porttitor morbi a dui",
