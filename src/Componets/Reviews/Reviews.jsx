@@ -1,12 +1,9 @@
-
-
 import { useState } from "react";
 import style from "./Reviews.module.scss";
 import StarSvg from "../../assets/ProjectSvgs/StarsSvg";
 import QuoteSvg from "../../assets/ProjectSvgs/QuoteSvg";
 import ArrowCircle2 from "../../assets/ProjectSvgs/ArrowCircle2";
 import CircleArrow from "../../assets/ProjectSvgs/CircleArrow";
-import { FaCircleArrowRight, FaCircleArrowLeft } from "react-icons/fa6";
 
 function Reviews() {
   const [displayedReviewIndex, setDisplayedReviewIndex] = useState(0);
@@ -18,6 +15,13 @@ function Reviews() {
       title: "Awesome service",
       para: "Lorem ipsum dolor sit amet consectetur. Luctus orci est est porttitor morbi a dui. Sagittis tellus enim lectus auctorcondimentum nunc nec pharetra cum. Sed sem sit ipsum nibh enimornare. Nunc cursus enim cras vivamus consequat facilisi bibendum. In id in nulla euismod.",
       name: "Melinda Maine",
+    },
+    {
+      id: 0,
+      img: "./Images/Crush material.jpg",
+      title: "Awesome service",
+      para: "Lorem ipsum dolor sit amet consectetur. Luctus orci est est porttitor morbi a dui. Sagittis tellus enim lectus auctorcondimentum nunc nec pharetra cum. Sed sem sit ipsum nibh enimornare. Nunc cursus enim cras vivamus consequat facilisi bibendum. In id in nulla euismod.",
+      name: "Manakamel",
     },
     {
       id: 1,
@@ -42,7 +46,7 @@ function Reviews() {
   };
 
   const showBackReview = () => {
-    console.log("clicked")
+    console.log("clicked");
     setDisplayedReviewIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0));
   };
 
@@ -81,9 +85,8 @@ function Reviews() {
           </div>
           {/* <FaCircleArrowRight className="proicon" onClick={showNextReview} /> */}
           <div onClick={showNextReview}>
-          <CircleArrow  className="proicon" />
-            
-             </div>
+            <CircleArrow className="proicon" />
+          </div>
         </div>
       </div>
     </section>

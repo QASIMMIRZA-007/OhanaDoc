@@ -1,3 +1,46 @@
+// .navbar {
+//   width: 100%;
+//   .container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 20px 40px 0 40px;
+//   }
+//   .left {
+//   }
+//   .right {
+//     nav {
+//       ul {
+//         display: flex;
+//         gap: 20px;
+//         align-items: center;
+
+//         li {
+//           list-style: none;
+//           text-transform: capitalize;
+//           color: var(--dark-color);
+//           font-size: 14px;
+//           font-weight: 400;
+//           cursor: pointer;
+//           .navLine {
+//             background: #f1e9e4;
+//           }
+//         }
+//         .navButton {
+//           // padding: 8px 10px;
+//           background: var(--green-color);
+//           border: none;
+//           border-radius: 5px;
+//           width: 100px;
+//           height: 42px;
+//           color: #ffffff;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// Define your styles for larger screens
 .navbar {
   width: 100%;
   .container {
@@ -27,13 +70,37 @@
           }
         }
         .navButton {
-          // padding: 8px 10px;
           background: var(--green-color);
           border: none;
           border-radius: 5px;
           width: 100px;
           height: 42px;
           color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// Media query for smaller screens
+@media screen and (max-width: 768px) {
+  .navbar {
+    .container {
+      padding: 20px;
+    }
+    .right {
+      nav {
+        ul {
+          flex-direction: column;
+          gap: 10px;
+
+          li {
+            padding: 8px 0;
+          }
+
+          .navButton {
+            width: 100%;
+          }
         }
       }
     }

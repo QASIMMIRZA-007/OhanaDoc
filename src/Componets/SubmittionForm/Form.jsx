@@ -41,17 +41,13 @@ function Form() {
                   <textarea placeholder="Write description here..." />
                 </div>
               </label> */}
-             
+
               <div className={style.inputContainer}>
-                <input
-                  type="text"
-                  placeholder="Write description here..."
-                />
+                <input type="text" placeholder="Write description here..." />
               </div>
-            
 
               <button type="submit" className={style.btn}>
-                Submit request
+                Submit 
               </button>
             </form>
           </div>

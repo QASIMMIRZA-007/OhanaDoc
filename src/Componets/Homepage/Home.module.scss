@@ -12,7 +12,7 @@
         width: 572px;
         color: var(--dark-color);
         font-size: 36px;
-        font-weight: 800;
+        font-weight: 1000;
         text-transform: capitalize;
         // -webkit-text-stroke-width: thin
       }
@@ -61,7 +61,7 @@
         .homeButton {
           border-radius: 7px;
           background: var(--green-color);
-          width: 143px;
+ width: 143px;
           height: 45px;
           border: none;
           color: #fff;
@@ -87,3 +87,107 @@
     }
   }
 }
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding-top: 20px; /* Adjusted for spacing on smaller screens */
+    }
+
+    .left {
+      gap: 0;
+      h1 {
+
+     font-size: 25px !important;
+     width: 110% !important;
+    
+      }
+
+      p {
+       width: 100% !important; /* Adjusted for responsiveness */
+      }
+
+      .inputFlex {
+        flex-direction: column;
+        .inputContainer {
+          max-width: 80%; 
+          margin-inline: auto;
+          
+        
+        }
+
+        .homeButton {
+          width: 100% !important; /* Adjusted for responsiveness */
+        }
+      }
+      img{
+        width: 100%;
+       
+        margin: 37px;
+    
+      }
+    }
+    .right{
+      img{
+        width: 80%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin: auto;
+      }
+    }
+    .superText{
+h1{
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 24px !important;
+}
+}
+        p{
+          width: 80% !important;
+          margin-inline: auto;
+          text-align: justify;
+         }
+      
+    }
+  
+
+
+
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    padding-top: 20px; /* Adjusted for spacing on smaller screens */
+  }
+
+  .left {
+    gap: 0 !important;
+    width: 80%;
+    h1 {
+
+    }
+
+    p {
+      max-width: 100%; /* Adjusted for responsiveness */
+    }
+
+    .inputFlex {
+      .inputContainer {
+        max-width: 100%; /* Adjusted for responsiveness */
+      }
+
+      .homeButton {
+        width: 100% !important; /* Adjusted for responsiveness */
+      }
+    }
+  }
+}
+
+
+
+ 

@@ -9,7 +9,7 @@
     align-items: center;
     // height: 100vh;
     border-radius: 7px;
-    background:  #fff;
+    background: #fff;
 
     /* big crd */
     box-shadow: 0px 0px 3.148px 0px rgba(0, 0, 0, 0.01),
@@ -97,13 +97,12 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              width: 100%;
+              max-width: 100%;
               border: 1px solid #ccc;
               padding: 8px;
               box-sizing: border-box;
               cursor: pointer;
               border-radius: 7px;
-             
 
               input[type="file"] {
                 display: none;
@@ -128,7 +127,7 @@
               box-sizing: border-box;
               margin-top: 5px;
               border-radius: 7px;
-              background:  #f8f6f4;
+              background: #f8f6f4;
               border: none;
               height: 40px;
               width: 400px;
@@ -170,4 +169,204 @@
       }
     }
   }
+}
+
+
+
+.sectionForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0px 0px 3.148px 0px rgba(0, 0, 0, 0.01),
+      0px 0px 6.519px 0px rgba(0, 0, 0, 0.02),
+      0px 0px 13px 0px rgba(0, 0, 0, 0.03),
+      0px 0px 25.481px 0px rgba(0, 0, 0, 0.03),
+      0px 0px 46.852px 0px rgba(0, 0, 0, 0.04),
+      0px 0px 80px 0px rgba(0, 0, 0, 0.05);
+    width: 100%;
+   width: 1104px; // Adjusted to be responsive
+ height: auto;
+ height: 570px;
+    margin-top: 100px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 80px;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        text-align: left;
+        .left {
+          margin-right: 20px;
+        }
+      }
+
+      .right {
+        width: 100%;
+
+        .inputContainer {
+          height: 110px;
+          background: #f8f6f4;
+          border-radius: 7px;
+          input {
+            border: none;
+            width: 100%;
+            padding-bottom: 68px;
+            padding-left: 10px;
+            height: 100%;
+            background: #f8f6f4;
+            border-radius: 7px;
+            text-align: start;
+            &:focus {
+              border: none;
+            }
+          }
+        }
+
+        h1 {
+          color: var(--dark-color);
+          font-size: 30px;
+          font-weight: 700;
+          text-transform: capitalize;
+          height: 60px;
+          margin: 30px 0 10px 0;
+
+          @media (min-width: 768px) {
+            // font-size: 2rem;
+          }
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          gap: 12px;
+
+          label {
+            margin-bottom: 10px;
+            width: 100%;
+
+            @media screen and (max-width:768px) {
+              text-align: left;
+            }
+            
+
+            .label {
+              color: var(--dark-color);
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+
+            .fileInputContainer {
+              // Styles for file input container...
+            }
+
+
+            input,
+            textArea,
+            select {
+              
+              padding: 8px;
+              box-sizing: border-box;
+              margin-top: 5px;
+              border-radius: 7px;
+              background: #f8f6f4;
+              border: none;
+              height: 40px;
+
+              @media (max-width: 768px) {
+                width: 100%;
+                margin-inline: auto;
+              }
+            }
+          }
+
+          // button {
+          //   width: 143px;
+          //   height: 45px;
+          //   padding: 12px 18px;
+          //   background-color: var(--green-color);
+          //   color: #fff;
+          //   border: none;
+          //   border-radius: 7px;
+          //   cursor: pointer;
+
+          //   @media (min-width: 768px) {
+          //     margin-left: 0;
+          //   }
+          // }
+        }
+      }
+    }
+  }
+}
+@media screen  and (max-width:768px){
+  .sectionForm{
+    .formContainer{
+      height: auto;
+      width: 80%;
+      margin-inline: auto;
+      .container{
+        gap: 20px;
+        .right{
+          .fileInputContainer{
+            
+            margin-inline: auto;
+          }
+          .inputContainer{
+            width: 100%;
+            margin-inline: auto;
+          }
+
+          .btn{
+            margin-left: 0 !important;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media screen  and (max-width:992px){
+  .sectionForm{
+    .formContainer{
+      height: auto;
+      width: 90%;
+      margin-inline: auto;
+      .container{
+        gap: 20px;
+        .right{
+          .fileInputContainer{
+            
+            margin-inline: auto;
+          }
+          .inputContainer{
+            width: 100%;
+            margin-inline: auto;
+          }
+
+          .btn{
+            margin-left: 0 !important;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  
 }

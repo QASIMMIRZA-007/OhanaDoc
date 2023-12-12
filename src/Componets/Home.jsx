@@ -15,15 +15,15 @@ function Home() {
     <>
      <div className='home'>
         <Navbar/>
-        <Homepage/>
-        <ProgramCards/>
-        <WorkingCards/>
-        <About/>
-        <Reviews/>
+      <Homepage/>
+        <ProgramCards/> 
+         <WorkingCards/>
+       <About/> 
+         <Reviews/>
         <FAQ/>
-        <SubmittionForm/>
+       <SubmittionForm/>
         <Resources/>
-        <Footer/>
+        <Footer/> 
         </div> 
     </>
   )

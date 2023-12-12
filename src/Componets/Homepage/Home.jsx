@@ -1,9 +1,13 @@
-import React from "react";
+import {useState} from "react";
 import style from "./Home.module.scss";
 import { CiSearch } from "react-icons/ci";
 
 
 function Home() {
+  const [handleSearch, setHandleSearch] = useState("");
+  const handleSearchBar = () =>{
+setHandleSearch("")
+  }
   return (
     <>
       <div className={style.home}>
@@ -25,7 +29,7 @@ function Home() {
               In id in nulla euismod.
             </p>
             <div className={style.inputFlex}>
-              <div className={style.inputContainer}>
+              <div className={style.inputContainer} value={handleSearch}>
                 <CiSearch />
                 <input
                   type="text"
@@ -33,11 +37,11 @@ function Home() {
                   placeholder="Search a treatment program"
                 />
               </div>
-              <button className={style.homeButton}>Get started</button>
+              <button className={style.homeButton} onClick={handleSearchBar}>Get started</button>
             </div>
           </div>
-          <div className={style.right}>
-            <div className={style.frame}>
+          <div className={style.right}>                 
+            <div className={style.frame}>  
               {/* <video width="444" height="305" controls>
                 <source
                   src="https://cdn.pixabay.com/vimeo/780232204/hospital-142528.mp4?width=1280&hash=5fe303920ef8f4c79972e47369361778431b9101"

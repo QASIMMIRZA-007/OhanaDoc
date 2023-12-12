@@ -55,11 +55,15 @@
         align-items: center;
         margin-top: 12px;
         gap: 3px;
+
         hr {
           width: 32px;
           height: 2px;
           background: #000;
          
+        }
+        p{
+          margin-bottom: 0;
         }
       }
     }
@@ -73,5 +77,124 @@
     // position: relative;
     // bottom: 140px;
     // right: 20px;
+  }
+}
+
+
+.reviewContainer {
+  h1 {
+    margin: 30px 0 20px 0;
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap; // Allow items to wrap to the next row on smaller screens
+    justify-content: center;
+    gap: 30px;
+
+    .left {
+      img {
+        width: 100%; // Use 100% width for responsiveness
+        max-width: 212px; // Set a maximum width for larger screens
+        height: auto; // Maintain aspect ratio
+        border-radius: 10px;
+        height: 212px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: center;
+      max-width: 581px; // Set a maximum width for larger screens
+
+      .flex {
+        display: flex;
+       
+        gap: 5px;
+        width: 100%; // Use 100% width for responsiveness
+
+        h3 {
+          color: var(--dark-color);
+          text-align: justify;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        color: var(--gray-color);
+        text-align: justify;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        width: 100% !important; 
+      }
+
+      // .dflex {
+      //   display: flex;
+      //   align-items: center;
+      //   margin-top: 12px;
+      //   gap: 3px;
+
+      //   hr {
+      //     width: 32px;
+      //     height: 2px;
+      //     background: #000;
+      //   }
+      // }
+    }
+  }
+
+  .arrowFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    // margin-top: 50px;
+    // position: relative;
+    // bottom: 140px;
+    // right: 20px;
+  }
+
+  // Media Queries
+  @media screen and (max-width: 768px) {
+    .container {
+      gap: 15px;
+      width: 80%;
+      margin-inline: auto;
+    
+
+    .right {
+      max-width: 100%;
+     .flex{
+      flex-direction: row;
+      justify-content: space-between;
+     }
+     .dflex{
+      margin-top: 0;
+     }
+    }
+  }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 24px; // Adjust font size for smaller screens
+    }
+
+    .container {
+      gap: 10px;
+      width: 80%;
+      margin-inline: auto;
+    }
   }
 }

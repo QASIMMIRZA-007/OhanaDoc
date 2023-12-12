@@ -1,7 +1,6 @@
 import { useState } from "react";
 import style from "./FAQ.module.scss";
 function FAQ() {
-  // const [answersVisible, setAnswersVisible] = useState([0]);
   const [openQuestion, setOpenQuestion] = useState(0);
 
   const questionData = [
